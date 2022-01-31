@@ -1,4 +1,4 @@
-# chaotic_pendulum
+# Chaotic Pendulum
 
 
 ## Euler-Richardson
