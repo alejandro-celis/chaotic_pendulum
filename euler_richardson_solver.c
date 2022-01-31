@@ -45,18 +45,16 @@ int main(int argc, char *argv[]) {
 
     parameters param = {x, v, omega_0, damping_constant, amplitude, omega, delta_t, t_max};
 
-    double n, slope, xmid, vmid, theta;
+    double n, theta;
     double t = 0.0;
 
     /* Euler-Richardson */
     while (t < t_max) {
-        slope = acceleration(param, t);
         param.x = param.x + 0.5 * param.v * delta_t;
-        param.v = param.v + 0.5 * slope * delta_t;
+        param.v = param.v + 0.5 * acceleration(param, t) * delta_t;
 
-        slope = acceleration(param, t + 0.5 * delta_t);
         param.x += param.v * delta_t;
-        param.v += slope * delta_t;
+        param.v += acceleration(param, t + 0.5 * delta_t) * delta_t;
 
         t += delta_t;
 
