@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
         theta = (theta > M_PI) ? theta - 2 * M_PI : theta;
         theta = (theta < -M_PI) ? theta + 2 * M_PI : theta;
 
-        printf("%f\t%f\t%f\t%f\n", t, x, v, theta);
+        printf("%f\t%f\t%f\t%f\n", t, param.x, param.v, theta);
     }
     return 0;
 }
