@@ -58,7 +58,7 @@ int main(int argc, char *argv[]) {
 
         t += delta_t;
 
-        theta = (2 * M_PI) * modf(x / (2 * M_PI), &n);
+        theta = (2 * M_PI) * modf(param.x / (2 * M_PI), &n);
         theta = (theta > M_PI) ? theta - 2 * M_PI : theta;
         theta = (theta < -M_PI) ? theta + 2 * M_PI : theta;
 
