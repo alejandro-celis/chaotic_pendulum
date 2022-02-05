@@ -4,6 +4,7 @@ We consider the following differential equation
 <p align="center">
   <img src="_images/equation.png" width="350" title="hover text">
 </p>
+
 This equation describes the motion of a pendulum subject to a damping force and a driving force.  Here `x` represents the angular position of the pendulum and dots are used to denote time derivatives.    
 
 ## Euler-Richardson
@@ -13,7 +14,7 @@ The program `euler_richardson_solver.c` solves the equation of motion using the 
 gcc euler_richardson_solver.c -o euler_richardson_solver.out 
 ```
 Select values for the required inputs:
-```json
+```
     x: float                /* angular position */
     v: float                /* angular speed */
     omega_0: float          /* natural frequency of pendulum */
@@ -31,6 +32,7 @@ The above produces an orbit for the pendulum as displayed below
 <p align="center">
   <img src="_images/phase_space.png" width="450" title="hover text">
 </p>
+
 Here `theta` is the angular position `x` converting to the range `[0, 2*pi)`.
 
 
