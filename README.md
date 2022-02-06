@@ -5,7 +5,7 @@ We consider the following differential equation
   <img src="_images/equation.png" width="350" title="hover text">
 </p>
 
-This equation describes the motion of a pendulum subject to a damping force and a driving force.  Here `x` represents the angular position of the pendulum and dots are used to denote time derivatives.    
+This equation describes the motion of a pendulum subject to a damping force and a vertical driving force.  Here `x` represents the angular position of the pendulum and dots are used to denote time derivatives.    
 
 ## Euler-Richardson
 
@@ -20,7 +20,7 @@ Select values for the required inputs:
     omega_0: float          /* natural frequency of pendulum */
     damping_constant: float /* pendulum damping constant */
     amplitude: float        /* pendulum driving force amplitude */
-    omega: float            /* pendulum frequency */
+    omega: float            /* pendulum driving force frequency */
     delta_t: float          /* time step for integration */
     t_max: float            /* maximum time for integration */
 ```

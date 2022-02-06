@@ -22,7 +22,7 @@ typedef struct {
     float omega_0;          /* natural frequency of pendulum */
     float damping_constant; /* pendulum damping constant */
     float amplitude;        /* pendulum driving force amplitude */
-    float omega;            /* pendulum frequency */
+    float omega;            /* pendulum driving force frequency  */
     float delta_t;          /* time step for integration */
     float t_max;            /* maximum time */
 } parameters;
